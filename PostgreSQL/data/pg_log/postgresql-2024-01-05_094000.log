@@ -1,0 +1,9 @@
+2024-01-05 09:40:01 ICT FATAL:  the database system is starting up
+2024-01-05 09:40:01 ICT LOG:  database system was interrupted; last known up at 2023-12-27 14:23:59 ICT
+2024-01-05 09:40:01 ICT LOG:  database system was not properly shut down; automatic recovery in progress
+2024-01-05 09:40:01 ICT LOG:  redo starts at 0/21566E58
+2024-01-05 09:40:01 ICT LOG:  record with zero length at 0/21567728
+2024-01-05 09:40:01 ICT LOG:  redo done at 0/215676F8
+2024-01-05 09:40:01 ICT LOG:  last completed transaction was at log time 2023-12-27 14:24:05.467+07
+2024-01-05 09:40:02 ICT LOG:  database system is ready to accept connections
+2024-01-05 09:40:02 ICT LOG:  autovacuum launcher started

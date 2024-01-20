@@ -1,0 +1,33 @@
+2023-12-22 19:52:22 ICT LOG:  database system was interrupted; last known up at 2023-12-22 16:42:50 ICT
+2023-12-22 19:52:22 ICT LOG:  database system was not properly shut down; automatic recovery in progress
+2023-12-22 19:52:22 ICT LOG:  redo starts at 0/1F8077D0
+2023-12-22 19:52:22 ICT LOG:  record with zero length at 0/1F809828
+2023-12-22 19:52:22 ICT LOG:  redo done at 0/1F8097F8
+2023-12-22 19:52:22 ICT LOG:  last completed transaction was at log time 2023-12-22 16:55:33.075+07
+2023-12-22 19:52:23 ICT FATAL:  the database system is starting up
+2023-12-22 19:52:23 ICT LOG:  database system is ready to accept connections
+2023-12-22 19:52:23 ICT LOG:  autovacuum launcher started
+2023-12-22 20:07:42 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-22 20:07:42 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-12-22 20:07:42 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-22 20:07:42 ICT STATEMENT:  SELECT id FROM "ir_cron" WHERE id IN (5) FOR UPDATE NOWAIT
+2023-12-22 21:39:14 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-22 21:39:14 ICT STATEMENT:  SELECT id FROM "ir_cron" WHERE id IN (5) FOR UPDATE NOWAIT
+2023-12-22 23:05:41 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-22 23:05:41 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-12-22 23:13:59 ICT ERROR:  null value in column "picking_id" violates not-null constraint
+2023-12-22 23:13:59 ICT DETAIL:  Failing row contains (12, 2023-12-22 16:13:17.567, null, 1, null, null, null, 120.000, null, 8, 1, 0.000, null, 2023-12-22 16:13:17.567, 2023-12-22 00:00:00, 15, 1, 12, false, null).
+2023-12-22 23:13:59 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."stock_pack_operation" SET "picking_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "picking_id""
+2023-12-22 23:13:59 ICT STATEMENT:  delete from stock_picking where id IN (8, 7, 6)

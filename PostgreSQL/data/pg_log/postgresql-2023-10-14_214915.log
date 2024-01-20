@@ -1,0 +1,32 @@
+2023-10-14 21:49:15 ICT LOG:  database system was interrupted; last known up at 2023-10-09 08:27:44 ICT
+2023-10-14 21:49:15 ICT LOG:  database system was not properly shut down; automatic recovery in progress
+2023-10-14 21:49:15 ICT LOG:  redo starts at 0/3F61BF8
+2023-10-14 21:49:15 ICT LOG:  record with zero length at 0/3F64E40
+2023-10-14 21:49:15 ICT LOG:  redo done at 0/3F64E10
+2023-10-14 21:49:15 ICT LOG:  last completed transaction was at log time 2023-10-09 08:57:25.498+07
+2023-10-14 21:49:16 ICT LOG:  database system is ready to accept connections
+2023-10-14 21:49:16 ICT LOG:  autovacuum launcher started
+2023-10-14 21:50:20 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-10-14 21:50:20 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=4
+	                                   FOR UPDATE NOWAIT
+2023-10-14 21:50:20 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-10-14 21:50:20 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-10-14 21:50:20 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-10-14 21:50:20 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=3
+	                                   FOR UPDATE NOWAIT

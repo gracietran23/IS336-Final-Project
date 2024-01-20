@@ -1,0 +1,39 @@
+2023-11-06 12:07:21 ICT LOG:  database system was interrupted; last known up at 2023-10-24 09:45:49 ICT
+2023-11-06 12:07:22 ICT LOG:  database system was not properly shut down; automatic recovery in progress
+2023-11-06 12:07:22 ICT LOG:  record with zero length at 0/4BB7930
+2023-11-06 12:07:22 ICT LOG:  redo is not required
+2023-11-06 12:07:22 ICT FATAL:  the database system is starting up
+2023-11-06 12:07:22 ICT LOG:  database system is ready to accept connections
+2023-11-06 12:07:22 ICT LOG:  autovacuum launcher started
+2023-11-06 12:09:28 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-11-06 12:09:28 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-11-06 12:09:28 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-11-06 12:09:28 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=3
+	                                   FOR UPDATE NOWAIT
+2023-11-06 12:35:59 ICT ERROR:  null value in column "pricelist_id" violates not-null constraint
+2023-11-06 12:35:59 ICT DETAIL:  Failing row contains (3, null, 2023-11-06 05:33:05.929, 1, null, 2023-11-06 05:32:32, 7, 14.00, null, null, 140.00, null, null, 1, null, draft, null, 1, null, 2023-11-06 05:33:05.929, 7, 1, null, 154.00, null, SO003, 7, manual, null, null, null, direct, null, 1, f).
+2023-11-06 12:35:59 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."sale_order" SET "pricelist_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "pricelist_id""
+2023-11-06 12:35:59 ICT STATEMENT:  delete from product_pricelist where id IN (3)
+2023-11-06 12:36:23 ICT ERROR:  null value in column "partner_invoice_id" violates not-null constraint
+2023-11-06 12:36:23 ICT DETAIL:  Failing row contains (1, null, 2023-11-06 05:15:05.352, 1, null, 2023-11-06 05:14:29, 7, 15.00, null, null, 150.00, null, null, 1, null, draft, 1, 1, null, 2023-11-06 05:15:05.352, null, 1, null, 165.00, null, SO001, 7, manual, null, null, null, direct, null, 1, f).
+2023-11-06 12:36:23 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."sale_order" SET "partner_invoice_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "partner_invoice_id""
+2023-11-06 12:36:23 ICT STATEMENT:  delete from res_partner where id IN (7)
+2023-11-06 12:37:00 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-11-06 12:37:00 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT

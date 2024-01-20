@@ -1,0 +1,35 @@
+2023-12-04 08:30:38 ICT LOG:  database system was interrupted; last known up at 2023-12-02 23:45:44 ICT
+2023-12-04 08:30:38 ICT LOG:  database system was not properly shut down; automatic recovery in progress
+2023-12-04 08:30:38 ICT LOG:  redo starts at 0/12ECF780
+2023-12-04 08:30:38 ICT LOG:  record with zero length at 0/12ED3290
+2023-12-04 08:30:38 ICT LOG:  redo done at 0/12ED3260
+2023-12-04 08:30:38 ICT LOG:  last completed transaction was at log time 2023-12-02 23:47:59.965+07
+2023-12-04 08:30:38 ICT FATAL:  the database system is starting up
+2023-12-04 08:30:38 ICT LOG:  database system is ready to accept connections
+2023-12-04 08:30:39 ICT LOG:  autovacuum launcher started
+2023-12-04 08:32:47 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-04 08:32:47 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=9
+	                                   FOR UPDATE NOWAIT
+2023-12-04 08:32:47 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-04 08:32:47 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=11
+	                                   FOR UPDATE NOWAIT
+2023-12-04 08:32:47 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-04 08:32:47 ICT STATEMENT:  SELECT id FROM "ir_cron" WHERE id IN (5) FOR UPDATE NOWAIT
+2023-12-04 08:32:47 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-04 08:32:47 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT

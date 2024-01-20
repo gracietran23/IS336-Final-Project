@@ -1,0 +1,33 @@
+2024-01-17 19:00:02 ICT FATAL:  the database system is starting up
+2024-01-17 19:00:02 ICT LOG:  database system was interrupted; last known up at 2024-01-17 09:40:39 ICT
+2024-01-17 19:00:02 ICT LOG:  database system was not properly shut down; automatic recovery in progress
+2024-01-17 19:00:02 ICT LOG:  redo starts at 0/28440810
+2024-01-17 19:00:02 ICT LOG:  record with zero length at 0/28441420
+2024-01-17 19:00:02 ICT LOG:  redo done at 0/284413F0
+2024-01-17 19:00:02 ICT LOG:  last completed transaction was at log time 2024-01-17 09:43:09.34+07
+2024-01-17 19:00:03 ICT LOG:  database system is ready to accept connections
+2024-01-17 19:00:03 ICT LOG:  autovacuum launcher started
+2024-01-17 19:02:08 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2024-01-17 19:02:08 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2024-01-17 23:19:26 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2024-01-17 23:19:26 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2024-01-17 23:20:27 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2024-01-17 23:20:27 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=7
+	                                   FOR UPDATE NOWAIT

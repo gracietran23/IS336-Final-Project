@@ -1,0 +1,7 @@
+2023-11-06 15:07:26 ICT FATAL:  the database system is starting up
+2023-11-06 15:07:26 ICT LOG:  database system was interrupted; last known up at 2023-11-06 12:52:22 ICT
+2023-11-06 15:07:26 ICT LOG:  database system was not properly shut down; automatic recovery in progress
+2023-11-06 15:07:26 ICT LOG:  record with zero length at 0/714DDC0
+2023-11-06 15:07:26 ICT LOG:  redo is not required
+2023-11-06 15:07:26 ICT LOG:  database system is ready to accept connections
+2023-11-06 15:07:27 ICT LOG:  autovacuum launcher started

@@ -1,0 +1,25 @@
+2023-10-09 08:22:40 ICT FATAL:  the database system is starting up
+2023-10-09 08:22:40 ICT LOG:  database system was interrupted; last known up at 2023-10-02 09:12:15 ICT
+2023-10-09 08:22:40 ICT LOG:  database system was not properly shut down; automatic recovery in progress
+2023-10-09 08:22:40 ICT LOG:  redo starts at 0/3F54238
+2023-10-09 08:22:40 ICT LOG:  record with zero length at 0/3F54860
+2023-10-09 08:22:40 ICT LOG:  redo done at 0/3F54830
+2023-10-09 08:22:40 ICT LOG:  last completed transaction was at log time 2023-10-02 09:14:54.74+07
+2023-10-09 08:22:41 ICT LOG:  database system is ready to accept connections
+2023-10-09 08:22:41 ICT LOG:  autovacuum launcher started
+2023-10-09 08:24:46 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-10-09 08:24:46 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-10-09 08:24:46 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-10-09 08:24:46 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=3
+	                                   FOR UPDATE NOWAIT

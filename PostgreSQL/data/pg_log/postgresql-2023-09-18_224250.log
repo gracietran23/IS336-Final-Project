@@ -1,0 +1,16 @@
+2023-09-18 22:42:50 ICT LOG:  database system was shut down at 2023-09-18 22:42:37 ICT
+2023-09-18 22:42:50 ICT LOG:  database system is ready to accept connections
+2023-09-18 22:42:50 ICT LOG:  autovacuum launcher started
+2023-09-18 23:00:20 ICT LOG:  could not receive data from client: No connection could be made because the target machine actively refused it.
+	
+2023-09-18 23:03:18 ICT LOG:  could not receive data from client: No connection could be made because the target machine actively refused it.
+	
+2023-09-18 23:25:46 ICT LOG:  received fast shutdown request
+2023-09-18 23:25:46 ICT LOG:  aborting any active transactions
+2023-09-18 23:25:46 ICT FATAL:  terminating connection due to administrator command
+2023-09-18 23:25:46 ICT FATAL:  terminating connection due to administrator command
+2023-09-18 23:25:46 ICT FATAL:  terminating connection due to administrator command
+2023-09-18 23:25:46 ICT FATAL:  terminating connection due to administrator command
+2023-09-18 23:25:46 ICT FATAL:  terminating connection due to administrator command
+2023-09-18 23:25:46 ICT LOG:  autovacuum launcher shutting down
+2023-09-18 23:25:46 ICT ERROR:  canceling statement due to user request

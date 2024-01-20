@@ -1,0 +1,48 @@
+2023-11-06 16:01:11 ICT LOG:  database system was interrupted; last known up at 2023-11-06 15:57:40 ICT
+2023-11-06 16:01:11 ICT LOG:  database system was not properly shut down; automatic recovery in progress
+2023-11-06 16:01:11 ICT LOG:  redo starts at 0/7247F80
+2023-11-06 16:01:11 ICT LOG:  record with zero length at 0/725B270
+2023-11-06 16:01:11 ICT LOG:  redo done at 0/725B240
+2023-11-06 16:01:11 ICT LOG:  last completed transaction was at log time 2023-11-06 15:59:26.881+07
+2023-11-06 16:01:11 ICT LOG:  database system is ready to accept connections
+2023-11-06 16:01:12 ICT LOG:  autovacuum launcher started
+2023-11-06 16:02:43 ICT ERROR:  null value in column "partner_id" violates not-null constraint
+2023-11-06 16:02:43 ICT DETAIL:  Failing row contains (1, 1, 2023-11-06 08:52:25.82, 1, 2023-11-06 08:52:25.82, f, null).
+2023-11-06 16:02:43 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."crm_make_sale" SET "partner_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "partner_id""
+2023-11-06 16:02:43 ICT STATEMENT:  delete from res_partner where id IN (11)
+2023-11-06 16:03:14 ICT ERROR:  null value in column "partner_id" violates not-null constraint
+2023-11-06 16:03:14 ICT DETAIL:  Failing row contains (1, 1, 2023-11-06 08:52:25.82, 1, 2023-11-06 08:52:25.82, f, null).
+2023-11-06 16:03:14 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."crm_make_sale" SET "partner_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "partner_id""
+2023-11-06 16:03:14 ICT STATEMENT:  delete from res_partner where id IN (11)
+2023-11-06 16:04:02 ICT ERROR:  null value in column "partner_id" violates not-null constraint
+2023-11-06 16:04:02 ICT DETAIL:  Failing row contains (1, 1, 2023-11-06 08:52:25.82, 1, 2023-11-06 08:52:25.82, f, null).
+2023-11-06 16:04:02 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."crm_make_sale" SET "partner_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "partner_id""
+2023-11-06 16:04:02 ICT STATEMENT:  delete from res_partner where id IN (11)
+2023-11-06 16:05:00 ICT ERROR:  null value in column "partner_id" violates not-null constraint
+2023-11-06 16:05:00 ICT DETAIL:  Failing row contains (1, 1, 2023-11-06 08:52:25.82, 1, 2023-11-06 08:52:25.82, f, null).
+2023-11-06 16:05:00 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."crm_make_sale" SET "partner_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "partner_id""
+2023-11-06 16:05:00 ICT STATEMENT:  delete from res_partner where id IN (11)
+2023-11-06 16:07:21 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-11-06 16:07:21 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-11-06 16:07:21 ICT ERROR:  null value in column "partner_id" violates not-null constraint
+2023-11-06 16:07:21 ICT DETAIL:  Failing row contains (1, 1, 2023-11-06 08:52:25.82, 1, 2023-11-06 08:52:25.82, f, null).
+2023-11-06 16:07:21 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."crm_make_sale" SET "partner_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "partner_id""
+2023-11-06 16:07:21 ICT STATEMENT:  delete from res_partner where id IN (11)
+2023-11-06 16:11:07 ICT ERROR:  null value in column "partner_id" violates not-null constraint
+2023-11-06 16:11:07 ICT DETAIL:  Failing row contains (1, 1, 2023-11-06 08:52:25.82, 1, 2023-11-06 08:52:25.82, f, null).
+2023-11-06 16:11:07 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."crm_make_sale" SET "partner_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "partner_id""
+2023-11-06 16:11:07 ICT STATEMENT:  delete from res_partner where id IN (11)
+2023-11-06 18:37:06 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-11-06 18:37:06 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT

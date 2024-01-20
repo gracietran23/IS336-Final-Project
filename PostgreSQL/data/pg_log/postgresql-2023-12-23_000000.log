@@ -1,0 +1,8 @@
+2023-12-23 00:05:41 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 00:05:41 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT

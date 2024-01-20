@@ -1,0 +1,54 @@
+2023-12-02 11:56:08 ICT LOG:  database system was interrupted; last known up at 2023-12-02 11:20:31 ICT
+2023-12-02 11:56:08 ICT LOG:  database system was not properly shut down; automatic recovery in progress
+2023-12-02 11:56:08 ICT LOG:  redo starts at 0/11EEC350
+2023-12-02 11:56:08 ICT LOG:  record with zero length at 0/11F109C8
+2023-12-02 11:56:08 ICT LOG:  redo done at 0/11F10998
+2023-12-02 11:56:08 ICT LOG:  last completed transaction was at log time 2023-12-02 11:24:14.921+07
+2023-12-02 11:56:08 ICT FATAL:  the database system is starting up
+2023-12-02 11:56:08 ICT LOG:  database system is ready to accept connections
+2023-12-02 11:56:09 ICT LOG:  autovacuum launcher started
+2023-12-02 11:57:13 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-02 11:57:13 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-12-02 11:57:14 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-02 11:57:14 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=2
+	                                   FOR UPDATE NOWAIT
+2023-12-02 11:57:18 ICT ERROR:  could not serialize access due to concurrent update
+2023-12-02 11:57:18 ICT CONTEXT:  SQL statement "SELECT 1 FROM ONLY "public"."res_users" x WHERE "id" OPERATOR(pg_catalog.=) $1 FOR KEY SHARE OF x"
+2023-12-02 11:57:18 ICT STATEMENT:  UPDATE "mail_mail" SET "state"='exception',"write_uid"=1,"write_date"=(now() at time zone 'UTC') WHERE id IN (18)
+2023-12-02 12:33:54 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-02 12:33:54 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=2
+	                                   FOR UPDATE NOWAIT
+2023-12-02 12:44:18 ICT ERROR:  null value in column "product_id" violates not-null constraint
+2023-12-02 12:44:18 ICT DETAIL:  Failing row contains (21, null, 2023-12-02 03:46:53.341, 1, null, 1, 100.000, null, 1, null, 1, 1, running, 2023-12-02 03:49:18.062, INT: admin, null, 2023-12-02 00:00:00, null, 9, null, 12, null, null, 1, null, 22, null, null, internal, null, null, null, null, null, 0, null).
+2023-12-02 12:44:18 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."procurement_order" SET "product_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "product_id""
+2023-12-02 12:44:18 ICT STATEMENT:  delete from product_template where id IN (62)
+2023-12-02 12:47:23 ICT ERROR:  null value in column "product_id" violates not-null constraint
+2023-12-02 12:47:23 ICT DETAIL:  Failing row contains (21, null, 2023-12-02 03:46:53.341, 1, null, 1, 100.000, null, 1, null, 1, 1, running, 2023-12-02 03:49:18.062, INT: admin, null, 2023-12-02 00:00:00, null, 9, null, 12, null, null, 1, null, 22, null, null, internal, null, null, null, null, null, 0, null).
+2023-12-02 12:47:23 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."procurement_order" SET "product_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "product_id""
+2023-12-02 12:47:23 ICT STATEMENT:  delete from product_template where id IN (62)
+2023-12-02 12:49:13 ICT ERROR:  null value in column "product_id" violates not-null constraint
+2023-12-02 12:49:13 ICT DETAIL:  Failing row contains (21, null, 2023-12-02 03:46:53.341, 1, null, 1, 100.000, null, 1, null, 1, 1, running, 2023-12-02 03:49:18.062, INT: admin, null, 2023-12-02 00:00:00, null, 9, null, 12, null, null, 1, null, 22, null, null, internal, null, null, null, null, null, 0, null).
+2023-12-02 12:49:13 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."procurement_order" SET "product_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "product_id""
+2023-12-02 12:49:13 ICT STATEMENT:  delete from product_template where id IN (62)
+2023-12-02 12:49:37 ICT ERROR:  null value in column "product_id" violates not-null constraint
+2023-12-02 12:49:37 ICT DETAIL:  Failing row contains (21, null, 2023-12-02 03:46:53.341, 1, null, 1, 100.000, null, 1, null, 1, 1, running, 2023-12-02 03:49:18.062, INT: admin, null, 2023-12-02 00:00:00, null, 9, null, 12, null, null, 1, null, 22, null, null, internal, null, null, null, null, null, 0, null).
+2023-12-02 12:49:37 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."procurement_order" SET "product_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "product_id""
+2023-12-02 12:49:37 ICT STATEMENT:  delete from product_template where id IN (62)
+2023-12-02 14:33:32 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-02 14:33:32 ICT STATEMENT:  SELECT id FROM "ir_cron" WHERE id IN (5) FOR UPDATE NOWAIT

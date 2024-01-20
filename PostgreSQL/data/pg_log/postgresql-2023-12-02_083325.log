@@ -1,0 +1,53 @@
+2023-12-02 08:33:27 ICT LOG:  database system was interrupted; last known up at 2023-11-27 12:27:10 ICT
+2023-12-02 08:33:27 ICT LOG:  database system was not properly shut down; automatic recovery in progress
+2023-12-02 08:33:27 ICT LOG:  record with zero length at 0/105A5690
+2023-12-02 08:33:27 ICT LOG:  redo is not required
+2023-12-02 08:33:27 ICT FATAL:  the database system is starting up
+2023-12-02 08:33:27 ICT LOG:  database system is ready to accept connections
+2023-12-02 08:33:28 ICT LOG:  autovacuum launcher started
+2023-12-02 08:35:27 ICT ERROR:  could not serialize access due to concurrent update
+2023-12-02 08:35:27 ICT STATEMENT:  delete from ir_attachment where id IN (24)
+2023-12-02 08:35:39 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-02 08:35:39 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-12-02 08:35:39 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-02 08:35:39 ICT STATEMENT:  SELECT id FROM "ir_cron" WHERE id IN (5) FOR UPDATE NOWAIT
+2023-12-02 09:02:37 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-02 09:02:37 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-12-02 10:02:22 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-02 10:02:22 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-12-02 10:32:47 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-02 10:32:47 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-12-02 10:33:48 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-02 10:33:48 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=5
+	                                   FOR UPDATE NOWAIT
+2023-12-02 10:33:49 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-02 10:33:49 ICT STATEMENT:  SELECT id FROM "ir_cron" WHERE id IN (5) FOR UPDATE NOWAIT

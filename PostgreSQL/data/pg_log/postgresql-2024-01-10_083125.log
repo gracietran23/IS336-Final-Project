@@ -1,0 +1,40 @@
+2024-01-10 08:31:27 ICT LOG:  database system was interrupted; last known up at 2024-01-06 16:54:00 ICT
+2024-01-10 08:31:27 ICT LOG:  database system was not properly shut down; automatic recovery in progress
+2024-01-10 08:31:27 ICT FATAL:  the database system is starting up
+2024-01-10 08:31:27 ICT LOG:  redo starts at 0/2195F7A0
+2024-01-10 08:31:27 ICT LOG:  record with zero length at 0/21962490
+2024-01-10 08:31:27 ICT LOG:  redo done at 0/21962460
+2024-01-10 08:31:27 ICT LOG:  last completed transaction was at log time 2024-01-06 17:05:52.151+07
+2024-01-10 08:31:27 ICT LOG:  database system is ready to accept connections
+2024-01-10 08:31:27 ICT LOG:  autovacuum launcher started
+2024-01-10 08:45:44 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2024-01-10 08:45:44 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2024-01-10 08:45:44 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2024-01-10 08:45:44 ICT STATEMENT:  SELECT id FROM "ir_cron" WHERE id IN (5) FOR UPDATE NOWAIT
+2024-01-10 08:47:19 ICT FATAL:  database "SXGach" does not exist
+2024-01-10 08:47:19 ICT FATAL:  database "SXGach" does not exist
+2024-01-10 08:59:31 ICT ERROR:  null value in column "code" violates not-null constraint
+2024-01-10 08:59:31 ICT DETAIL:  Failing row contains (60, 1, null, 2024-01-10 01:59:31.859, Bình Định, null, 1, 2024-01-10 01:59:31.859).
+2024-01-10 08:59:31 ICT STATEMENT:  INSERT INTO "res_country_state" ("id", "name", "create_uid", "write_uid", "create_date", "write_date") VALUES(nextval('res_country_state_id_seq'), 'Bình Định', 1, 1, (now() at time zone 'UTC'), (now() at time zone 'UTC')) RETURNING id
+2024-01-10 09:49:48 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2024-01-10 09:49:48 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2024-01-10 14:49:25 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2024-01-10 14:49:25 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT

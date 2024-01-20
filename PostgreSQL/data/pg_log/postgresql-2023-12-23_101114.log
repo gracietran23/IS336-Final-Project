@@ -1,0 +1,148 @@
+2023-12-23 10:11:15 ICT LOG:  database system was interrupted; last known up at 2023-12-23 00:17:24 ICT
+2023-12-23 10:11:15 ICT LOG:  database system was not properly shut down; automatic recovery in progress
+2023-12-23 10:11:15 ICT LOG:  redo starts at 0/20521A38
+2023-12-23 10:11:16 ICT FATAL:  the database system is starting up
+2023-12-23 10:11:16 ICT LOG:  record with zero length at 0/2056C988
+2023-12-23 10:11:16 ICT LOG:  redo done at 0/2056C958
+2023-12-23 10:11:16 ICT LOG:  last completed transaction was at log time 2023-12-23 00:20:54.769+07
+2023-12-23 10:11:16 ICT LOG:  database system is ready to accept connections
+2023-12-23 10:11:16 ICT LOG:  autovacuum launcher started
+2023-12-23 10:12:22 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 10:12:22 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=5
+	                                   FOR UPDATE NOWAIT
+2023-12-23 10:12:22 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 10:12:22 ICT STATEMENT:  SELECT id FROM "ir_cron" WHERE id IN (5) FOR UPDATE NOWAIT
+2023-12-23 10:12:22 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 10:12:22 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-12-23 10:12:22 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 10:12:22 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=3
+	                                   FOR UPDATE NOWAIT
+2023-12-23 10:35:46 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 10:35:46 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-12-23 10:54:20 ICT ERROR:  null value in column "picking_id" violates not-null constraint
+2023-12-23 10:54:20 ICT DETAIL:  Failing row contains (12, 2023-12-22 16:13:17.567, null, 1, null, null, null, 120.000, null, 8, 1, 0.000, null, 2023-12-22 16:13:17.567, 2023-12-22 00:00:00, 15, 1, 12, false, null).
+2023-12-23 10:54:20 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."stock_pack_operation" SET "picking_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "picking_id""
+2023-12-23 10:54:20 ICT STATEMENT:  delete from stock_picking where id IN (8)
+2023-12-23 11:20:46 ICT ERROR:  update or delete on table "product_product" violates foreign key constraint "stock_quant_product_id_fkey" on table "stock_quant"
+2023-12-23 11:20:46 ICT DETAIL:  Key (id)=(12) is still referenced from table "stock_quant".
+2023-12-23 11:20:46 ICT STATEMENT:  delete from product_template where id IN (9)
+2023-12-23 12:36:25 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 12:36:25 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-12-23 13:39:29 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 13:39:29 ICT STATEMENT:  SELECT id FROM "ir_cron" WHERE id IN (5) FOR UPDATE NOWAIT
+2023-12-23 14:36:27 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 14:36:27 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-12-23 16:05:58 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 16:05:58 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-12-23 16:36:29 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 16:36:29 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-12-23 17:36:29 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 17:36:29 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-12-23 17:39:32 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 17:39:32 ICT STATEMENT:  SELECT id FROM "ir_cron" WHERE id IN (5) FOR UPDATE NOWAIT
+2023-12-23 18:33:34 ICT ERROR:  update or delete on table "product_product" violates foreign key constraint "stock_quant_product_id_fkey" on table "stock_quant"
+2023-12-23 18:33:34 ICT DETAIL:  Key (id)=(12) is still referenced from table "stock_quant".
+2023-12-23 18:33:34 ICT STATEMENT:  delete from product_template where id IN (9)
+2023-12-23 18:33:59 ICT ERROR:  update or delete on table "product_product" violates foreign key constraint "stock_quant_product_id_fkey" on table "stock_quant"
+2023-12-23 18:33:59 ICT DETAIL:  Key (id)=(14) is still referenced from table "stock_quant".
+2023-12-23 18:33:59 ICT STATEMENT:  delete from product_template where id IN (11)
+2023-12-23 18:37:38 ICT ERROR:  update or delete on table "product_product" violates foreign key constraint "stock_quant_product_id_fkey" on table "stock_quant"
+2023-12-23 18:37:38 ICT DETAIL:  Key (id)=(14) is still referenced from table "stock_quant".
+2023-12-23 18:37:38 ICT STATEMENT:  delete from product_template where id IN (11)
+2023-12-23 18:37:49 ICT ERROR:  null value in column "product_id" violates not-null constraint
+2023-12-23 18:37:49 ICT DETAIL:  Failing row contains (25, SO014:WH: Stock -> Customers MTO, 2023-12-14 11:27:39.244, 1, 20, 1, 20.000, 1, 1, null, 1, 1, done, 2023-12-23 04:18:26.328, WH: Stock -> Customers MTO, null, 2023-12-21 11:25:47, 12, 10, 63, 12, null, null, 1, null, null, null, 33, null, null, 79, null, internal, null, null, 0, null).
+2023-12-23 18:37:49 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."procurement_order" SET "product_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "product_id""
+2023-12-23 18:37:49 ICT STATEMENT:  delete from product_template where id IN (200)
+2023-12-23 18:40:31 ICT ERROR:  null value in column "picking_type_id" violates not-null constraint
+2023-12-23 18:40:31 ICT DETAIL:  Failing row contains (4, your company warehouse, 2023-12-09 02:40:26.221, null, 1, 11, 1, null, null, direct, null, 1, null, draft, null, 1, 2023-12-09 02:40:32, 2023-12-09 02:40:26.221, 2023-12-09 02:40:32, WH/OUT/00004, t, 2023-12-09 02:40:32, null, none, null, null).
+2023-12-23 18:40:31 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."stock_picking" SET "picking_type_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "picking_type_id""
+2023-12-23 18:40:31 ICT STATEMENT:  delete from stock_picking_type where id IN (2)
+2023-12-23 18:41:45 ICT ERROR:  null value in column "product_id" violates not-null constraint
+2023-12-23 18:41:45 ICT DETAIL:  Failing row contains (19, SO011, 2023-12-13 06:59:58.767, 1, 30, 1, 30.000, 1, 1, null, 1, 1, done, 2023-12-23 04:16:24.86, C2, null, 2023-12-30 06:58:07, 9, 1, null, 9, 68, null, 1, none, null, null, null, null, 25, 68, null, customer, null, null, 0, null).
+2023-12-23 18:41:45 ICT CONTEXT:  SQL statement "UPDATE ONLY "public"."procurement_order" SET "product_id" = NULL WHERE $1 OPERATOR(pg_catalog.=) "product_id""
+2023-12-23 18:41:45 ICT STATEMENT:  delete from product_template where id IN (55)
+2023-12-23 18:42:22 ICT ERROR:  update or delete on table "product_product" violates foreign key constraint "stock_quant_product_id_fkey" on table "stock_quant"
+2023-12-23 18:42:22 ICT DETAIL:  Key (id)=(12) is still referenced from table "stock_quant".
+2023-12-23 18:42:22 ICT STATEMENT:  delete from product_template where id IN (9)
+2023-12-23 18:42:29 ICT ERROR:  update or delete on table "product_product" violates foreign key constraint "stock_quant_product_id_fkey" on table "stock_quant"
+2023-12-23 18:42:29 ICT DETAIL:  Key (id)=(60) is still referenced from table "stock_quant".
+2023-12-23 18:42:29 ICT STATEMENT:  delete from product_template where id IN (56)
+2023-12-23 18:42:42 ICT ERROR:  update or delete on table "product_product" violates foreign key constraint "stock_quant_product_id_fkey" on table "stock_quant"
+2023-12-23 18:42:42 ICT DETAIL:  Key (id)=(202) is still referenced from table "stock_quant".
+2023-12-23 18:42:42 ICT STATEMENT:  delete from product_template where id IN (198)
+2023-12-23 18:42:50 ICT ERROR:  update or delete on table "product_product" violates foreign key constraint "stock_quant_product_id_fkey" on table "stock_quant"
+2023-12-23 18:42:50 ICT DETAIL:  Key (id)=(9) is still referenced from table "stock_quant".
+2023-12-23 18:42:50 ICT STATEMENT:  delete from product_template where id IN (6)
+2023-12-23 18:51:46 ICT ERROR:  new row for relation "mrp_bom_line" violates check constraint "mrp_bom_line_bom_qty_zero"
+2023-12-23 18:51:46 ICT DETAIL:  Failing row contains (41, null, null, 2023-12-23 11:51:46.503, 244, 1, 1, null, 1, 1, null, 0, 2023-12-23 11:51:46.503, 0.000, null, 1, normal, 15).
+2023-12-23 18:51:46 ICT STATEMENT:  INSERT INTO "mrp_bom_line" ("id", "product_rounding", "date_stop", "product_id", "product_uom", "sequence", "date_start", "product_qty", "bom_id", "product_efficiency", "type", "create_uid", "write_uid", "create_date", "write_date") VALUES(nextval('mrp_bom_line_id_seq'), 0.0, NULL, 244, 1, 1, NULL, '0.000', 15, 1.0, 'normal', 1, 1, (now() at time zone 'UTC'), (now() at time zone 'UTC')) RETURNING id
+2023-12-23 20:35:40 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 20:35:40 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2023-12-23 21:39:44 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 21:39:44 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=5
+	                                   FOR UPDATE NOWAIT
+2023-12-23 21:39:44 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2023-12-23 21:39:44 ICT STATEMENT:  SELECT id FROM "ir_cron" WHERE id IN (5) FOR UPDATE NOWAIT

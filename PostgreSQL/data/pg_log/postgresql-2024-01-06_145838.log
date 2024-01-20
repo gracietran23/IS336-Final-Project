@@ -1,0 +1,25 @@
+2024-01-06 14:58:40 ICT LOG:  database system was interrupted; last known up at 2024-01-05 09:40:01 ICT
+2024-01-06 14:58:40 ICT LOG:  database system was not properly shut down; automatic recovery in progress
+2024-01-06 14:58:40 ICT LOG:  record with zero length at 0/21567790
+2024-01-06 14:58:40 ICT LOG:  redo is not required
+2024-01-06 14:58:40 ICT FATAL:  the database system is starting up
+2024-01-06 14:58:40 ICT LOG:  database system is ready to accept connections
+2024-01-06 14:58:41 ICT LOG:  autovacuum launcher started
+2024-01-06 15:01:47 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2024-01-06 15:01:47 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=1
+	                                   FOR UPDATE NOWAIT
+2024-01-06 15:01:47 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2024-01-06 15:01:47 ICT STATEMENT:  SELECT id FROM "ir_cron" WHERE id IN (5) FOR UPDATE NOWAIT
+2024-01-06 15:01:47 ICT ERROR:  could not obtain lock on row in relation "ir_cron"
+2024-01-06 15:01:47 ICT STATEMENT:  SELECT *
+	                                   FROM ir_cron
+	                                   WHERE numbercall != 0
+	                                      AND active
+	                                      AND nextcall <= (now() at time zone 'UTC')
+	                                      AND id=3
+	                                   FOR UPDATE NOWAIT
