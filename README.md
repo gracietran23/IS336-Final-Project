@@ -2,6 +2,8 @@
 <h2>BÁO CÁO ĐỒ ÁN CUỐI KỲ</h2>
 Đề tài: Ứng dụng ERP vào doanh nghiệp sản xuất gạch xây dựng<br>
 GVHD: ThS. Đỗ Duy Thanh<br>
+Lớp: IS336.O11.HTCL
+Học kỳ 1 NH 2023-2024
 
 ## Thành viên nhóm
 | STT | MSSV | Họ và tên | Chức vụ | Github | Email |
